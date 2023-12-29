@@ -1,0 +1,57 @@
+/* Your custom styles here */
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.background-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-image: linear-gradient(120deg,rgb(125, 218, 235),rgb(17, 17, 88));
+    
+    opacity: 20%;
+    z-index: -1; /* Send the background behind the other content */
+}
+
+.container {
+    text-align: center;
+}
+
+.form {
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: rgba(181, 220, 231, 0.8); /* Add a semi-transparent white background */
+    font-family: 'Inter', sans-serif;
+}
+
+/* Adjust font size and input width */
+label, input {
+    width: 100%;
+}
+
+label {
+    font-size: 14px;
+}
+
+.sub_button,
+.reset_button {
+    background-color: rgb(126, 142, 194);
+    color: white;
+    margin-top: 15px;
+    border-radius: 10%;
+    font-size: 20px;
+}
+.h1{
+    margin: 0px;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</title>
+    <!-- Add custom CSS -->
+    <link rel="stylesheet" href="form.css">
+    <!-- Add Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8sh+Wy4WgcEj3JFgh4skw5EAg5O8vbYt+GVhJ" crossorigin="anonymous">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;900&display=swap" rel="stylesheet">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+</head>
+<body>
+    <div class="background-container"></div>
+    <div class="container">
+        <h1 class="h1" style="font-family: 'Inter', sans-serif;">Enter Your Details</h1><br>
+        <form class="form" onsubmit="return validateForm()">
+            <label for="name" style="font-size: 20px;">Enter your Name</label><br><br>
+            <input type="text" id="name" name="name" onkeydown="moveToNext(event, 'phone')"><br><br>
+
+            <label for="phone" style="font-size: 20px;">Enter Phone Number</label><br><br>
+            <input type="text" id="phone" name="phone" onkeydown="moveToNext(event, 'email')"><br><br>
+
+            <label for="email" style="font-size: 20px;">Enter your Email</label><br><br>
+            <input type="email" id="email" name="email" onkeydown="moveToNext(event, 'password')"><br><br>
+
+            <label for="password" style="font-size: 20px;">Enter your Password</label><br><br>
+            <input type="password" id="password" name="password" onkeydown="moveToNext(event, 'confirmPassword')"><br><br>
+
+            <label for="confirmPassword" style="font-size: 20px;">Confirm Password</label><br><br>
+            <input type="password" id="confirmPassword" name="confirmPassword"><br><br>
+
+            <button class="sub_button" type="submit">Submit</button>
+            <button class="reset_button" type="reset">Reset</button>
+        </form>
+    </div>
+
+    <!--linking bootstrap-->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8sh+Wy4WgcEj3JFgh4skw5EAg5O8vbYt+GVhJ" crossorigin="anonymous"></script>
+
+    <!-- linking javascript -->
+    <script src="form.js"></script>
+</body>
+</html>
